@@ -5,12 +5,11 @@ import { CardCarulla } from './CardCarulla';
 import { Loader } from './Loader';
 
 // Definición del componente funcional PokemonList
-export const CarullaList = () => {
+export const CarullaList = ({ listaPeliculas, loading = false, agregar = true }) => {
     // Uso del contexto PokemonContext para obtener datos y estado
-    const { allCarulla, loading } = useContext(CarullaContext);
+    // const { allCarulla, loading } = useContext(CarullaContext);
 
     // Renderizado condicional basado en el estado de carga
-    const [textoBusqueda, setTextoBusqueda] =useState("");
     return (
         <>
             {loading ? (
@@ -20,10 +19,10 @@ export const CarullaList = () => {
                 // Mostrar la lista de Pokémon cuando no está en estado de carga
                 <div className='card-list-pokemon container'>
                     {/* Mostrar los Pokémon filtrados si existen */}
-                            {allCarulla.map((pelicula,index) => (
+                            {listaPeliculas.map((pelicula,index) => (
                                 // Renderizar el componente CardPokemon para cada Pokémon
                                 // index nunca cambia y asi los puede editar la llave de cada pelicula
-                                <CardCarulla pelicula={pelicula} key={index} />
+                                <CardCarulla pelicula={pelicula} agregar={agregar} index={index} key={index} />
                             ))}
                 </div>
             )}

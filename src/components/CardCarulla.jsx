@@ -1,10 +1,12 @@
 // Importación de React para usar JSX y crear componentes
-import React from 'react';
+import React, { useContext } from 'react';
+import { CarullaContext } from '../context/CarullaContext';
 
 
 
 // Definición del componente funcional CardPokemon que recibe un objeto pokemon como prop
-export const CardCarulla = ({ pelicula }) => {
+export const CardCarulla = ({ pelicula, agregar = true, index }) => {
+    const { agregarAlCarrito, eliminarCarrito } = useContext(CarullaContext);
     return (
         // Uso de Link para crear un enlace a la ruta específica del Pokémon utilizando su ID
         <> 
@@ -26,7 +28,13 @@ export const CardCarulla = ({ pelicula }) => {
                 <h3>{pelicula.Title}</h3>
             </div>
             <div>
-                <button> agregar</button>
+                <button onClick={() => {
+                    if (agregar) {
+                        agregarAlCarrito(pelicula)
+                    } else {
+                        eliminarCarrito(index)
+                    }
+                    }}> {agregar ? "agregar": "Eliminar"}</button>
             </div>
         </>
     );

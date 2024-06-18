@@ -22,14 +22,14 @@ function NavBar() {
                 </div>
                 <div>
                     <input type="text" value={textoBusqueda} onChange={(ev)=>{setTextoBusqueda(ev.target.value)}} />
-                    <button onClick={(ev)=>{getAllCarulla(textoBusqueda)}}>buscar </button>
+                    <button onClick={()=>{getAllCarulla(textoBusqueda)}}>buscar </button>
                 </div>
                 <div className={styles['headerdos']}>
                     <NavButton icon={faCar} href="#" />
                     <NavButton icon={faCar} href="#" />
                     <NavButton icon={faCar} href="#" />
                     <NavButton icon={faCar} href="#" />
-                    <NavButton icon={faCartShopping} href="#" />
+                    <NavButton icon={faCartShopping} href="/carrito" />
                 </div>
                 
             </div>

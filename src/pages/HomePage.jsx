@@ -82,7 +82,7 @@ export const HomePage = () => {
                         
                        
                     </div>
-                    <div>
+                    <div className='peluculas '>
                         <CarullaList listaPeliculas={contexto.allCarulla} />
                     </div>
 

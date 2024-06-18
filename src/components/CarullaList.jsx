@@ -16,7 +16,7 @@ export const CarullaList = ({ listaPeliculas, loading = false, agregar = true })
                 // Mostrar el componente Loader si está en estado de carga
                 <Loader />
             ) : (
-                // Mostrar la lista de Pokémon cuando no está en estado de carga
+                // Mostrar la lista de peliculas cuando no está en estado de carga
                 <div className='card-list-pokemon container'>
                     {/* Mostrar los Pokémon filtrados si existen */}
                             {listaPeliculas.map((pelicula,index) => (

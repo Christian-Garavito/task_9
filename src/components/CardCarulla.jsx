@@ -1,6 +1,7 @@
 // Importación de React para usar JSX y crear componentes
 import React, { useContext } from 'react';
 import { CarullaContext } from '../context/CarullaContext';
+import styles from './CardCarulla.module.css';
 
 
 
@@ -22,7 +23,7 @@ export const CardCarulla = ({ pelicula, agregar = true, index }) => {
             </div>
             {/* Contenedor para la información del Pokémon */}
             <div className='card-info'>
-                {/* Muestra el ID del Pokémon */}
+                {/* Muestra el ID del Peliculas*/}
                 <span className='pokemon-id'>N° {pelicula.imdbID}</span>
                 {/* Muestra el nombre del Pokémon */}
                 <h3>{pelicula.Title}</h3>

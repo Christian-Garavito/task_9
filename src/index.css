@@ -47,7 +47,7 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* margin-left: -18rem; */
+  margin-left: -12rem;
 }
 
 .p1{
@@ -73,5 +73,12 @@ body{
 }
 .botones{
   display: flex;
+}
+
+.peluculas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
 }
 

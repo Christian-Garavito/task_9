@@ -1,0 +1,13 @@
+
+.headertotal {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headeruno {
+    display: flex;
+}
+
+.headerdos {
+    display: flex;
+}

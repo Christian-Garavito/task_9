@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import { CarullaContext } from '../context/CarullaContext';
 import { CardCarulla } from './CardCarulla';
 import { Loader } from './Loader';
+import styles from './CarullaList.module.css'
+
 
 // Definición del componente funcional PokemonList
 export const CarullaList = ({ listaPeliculas, loading = false, agregar = true }) => {
@@ -17,7 +19,7 @@ export const CarullaList = ({ listaPeliculas, loading = false, agregar = true })
                 <Loader />
             ) : (
                 // Mostrar la lista de peliculas cuando no está en estado de carga
-                <div className='card-list-pokemon container'>
+                <div className={styles['card-list']}>
                     {/* Mostrar los Pokémon filtrados si existen */}
                             {listaPeliculas.map((pelicula,index) => (
                                 // Renderizar el componente CardPokemon para cada Pokémon

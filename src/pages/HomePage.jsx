@@ -56,29 +56,23 @@ export const HomePage = () => {
 
 
                 </div>
-                <div>
+                <div className='botones_peliculas'>
                     <div className='botones'>
-                        <div>
+                        
                         <ButtonCuerpo title={"Pasillo"} href='#' />
-                        </div>
-                        <div>
+                        
                         <ButtonCuerpo title={"Bufalo, ternera y otros"} href='#' />
-                        </div>
-                        <div>
+                        
                         <ButtonCuerpo title={"Carne de Cerdo"} href='#' />
-                        </div>
-                        <div>
+                        
                         <ButtonCuerpo title={"Carne de res"} href='#' />
-                        </div>
-                        <div>
+                       
                         <ButtonCuerpo title={"Otras species"} href='#' />
-                        </div>
-                        <div>
+                        
                         <ButtonCuerpo title={"Pescado"} href='#' />
-                        </div>
-                        <div>
+                       
                         <ButtonCuerpo title={"Pollo"} href='#' />
-                        </div>
+                       
                         
                        
                     </div>

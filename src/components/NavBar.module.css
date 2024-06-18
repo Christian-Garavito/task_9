@@ -2,6 +2,7 @@
 .headertotal {
     display: flex;
     justify-content: space-around;
+    background-color: greenyellow;
 }
 
 .headeruno {

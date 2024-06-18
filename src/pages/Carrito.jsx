@@ -8,7 +8,7 @@ export const Carrito =()=>{
     return(
         <>
         <div>
-            <h1>Pollo, Carnes y pescado</h1>
+            <h1>Pedido de compras</h1>
         </div>
         <div>
         <CarullaList listaPeliculas={peliculasCarrito} agregar={false} />

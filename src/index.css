@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(220, 220, 241);
+  background-color: rgb(255, 255, 255);
 }
 
 .titulo1{
@@ -36,7 +36,7 @@ body{
 
 .Cuerpo_filto_botoes_menu{
   display: flex;
-  justify-content: space-evenly;
+
 }
 
 .Cuerpo_filto_botoes_menu p1{
@@ -44,10 +44,13 @@ body{
 }
 
 .Filto_busqueda{
+  background-color: white;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  /* margin-left: -18rem; */
+  justify-content: start;
+  
+  width: 30vw;
 }
 
 .p1{
@@ -71,7 +74,21 @@ body{
   font-size: 16px;
   line-height: 24px;
 }
+
+.botones_peliculas{
+   width: 70vw; 
+}
+
 .botones{
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  background-color: rgb(255, 255, 255);
+}
+
+.peluculas {
+  background-color: rgb(251, 247, 247);
+
 }
 

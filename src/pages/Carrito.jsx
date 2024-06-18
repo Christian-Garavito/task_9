@@ -5,7 +5,7 @@ export const Carrito =()=>{
     return(
         <>
         <div>
-            <h1>hola mundo</h1>
+            <h1>Pollo, Carnes y pescado</h1>
         </div>
         </>
     )

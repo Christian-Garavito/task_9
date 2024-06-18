@@ -11,8 +11,12 @@ export const HomePage = () => {
     return (
             <div>
                 <NavBar />
-                <h1>hola mundo hola garao</h1>
-                
+                <div>
+                <h1>Pollo, Carnes y pescado</h1>
+                </div>
+                <div>
+                    <img src="./img/imagen1" alt="carulla imagen" />
+                </div>
                 
                  
                 <Outlet/>

@@ -1,0 +1,15 @@
+
+.headertotal {
+    display: flex;
+    justify-content: space-around;
+    background-color: #91C940;
+}
+
+.headeruno {
+    display: flex;
+    
+}
+
+.headerdos {
+    display: flex;
+}

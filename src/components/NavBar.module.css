@@ -3,13 +3,19 @@
     display: flex;
     justify-content: space-around;
     background-color: #91C940;
+
 }
 
 .headeruno {
     display: flex;
-    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .headerdos {
     display: flex;
+    align-items: center;
+    padding: 1px 15px;
 }

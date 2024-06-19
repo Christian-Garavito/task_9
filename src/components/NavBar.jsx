@@ -30,7 +30,7 @@ function NavBar() {
                     <NavButton icon={faCar} href="#" />
                     <NavButton icon={faCar} href="#" />
                     <NavButton icon={faCartShopping} href="/carrito" />
-                    <p></p>
+                    <p>hola</p>
                 </div>
 
             </div>
